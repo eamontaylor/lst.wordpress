@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* Griddler jQuery Plugin CSS Document */
+
+/*-----START BASIC HTML STYLE RULES-----*/
+
+body, html {
+	margin:0px;
+	padding:0px;
+}
+
+a, a img, a:visited, a:link, a:hover {
+	border:0px;
+	text-decoration:none;
+}
+
+ul, li {
+	margin:0px;
+	padding:0px;
+}
+
+/*-----END BASIC HTML STYLE RULES-----*/
+
+/*-----START GRID SPECIFIC STYLE RULES-----*/
+
+#featured_project {
+	float:left;
+	overflow:hidden;
+}
+
+#project_top {
+	float:left;
+	overflow:hidden;
+}
+
+#project_btm {
+	overflow:hidden;
+	padding-bottom:20px;
+}
+
+#featured_project li, #project_top li, #project_btm li {
+	position:relative;
+	overflow:hidden;
+}
+
+#project_top li, #project_btm li {
+	float:left;
+}
+
+#featured_project h2, #project_top h2, #project_btm h2 {
+	color:#FFF;
+	font-family:Helvetica, Arial, sans-serif;
+	font-weight:normal;
+	text-shadow:0 1px 0 #303030;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	position:relative;
+	top:120%;
+}
+
+.project_info {
+	cursor:pointer;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+	background-image:url(plugin_assets/dark_bg.png);
+	background-repeat:repeat;
+	display:none;
+}
+
+#griddler_load {
+	width:150px;
+	height:22px;
+	margin:0 auto;
+	padding:7px;
+	background-color:#151515;
+	border-radius:2px;
+	color:#FFF;
+	font-size:20px;
+	font-family:Helvetica,Arial,sans-serif;
+	text-align:center;
+	overflow:hidden;
+}
+
+#griddler_load:hover {
+	background-color:#202020;
+	cursor:pointer;
+}
+
+/*-----END GRID SPECIFIC STYLE RULES-----*/
+
+/*-----START LIGHTBOX SPECIFIC STYLE RULES-----*/
+
+#lightbox_wrapper {
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background-image:url(plugin_assets/lightbox_overlay.png);
+	background-repeat:repeat;
+	text-align:center;
+	z-index:10000;
+	display:none;
+}
+
+#lightbox {
+	margin:0 auto;
+	padding:12px;
+	background-color:#000;
+	border:0px;
+	border-radius:2px;
+	text-align:center;
+	position:relative;
+}
+
+#lightbox img {
+	float:left;
+}
+
+#close_lightbox {
+	width:59px;
+	height:58px;
+	background-color:#000;
+	background-image:url(plugin_assets/close_lightbox_btn.png);
+	background-position:0px 0px;
+	border-top:solid 1px #404040;
+	border-right:solid 1px #404040;
+	border-bottom:solid 1px #404040;
+	overflow:hidden;
+	position:absolute;
+	top:0px;
+	right:-61px;
+}
+
+#close_lightbox:hover {
+	cursor:pointer;
+	background-position:0px -58px;
+}
+
+/*-----END LIGHTBOX SPECIFIC STYLE RULES-----*/

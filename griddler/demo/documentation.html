@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Griddler jQuery Plugin: Documentation</title>
+<link rel="icon" href="_images/icon.png" />
+<link type="text/css" rel="stylesheet" href="_css/main.css" />
+<link rel="stylesheet" href="_css/griddler_style.css" type="text/css" />
+<script type="text/javascript" src="_js/jquery.1.8.0.min.js"></script>
+<script type="text/javascript" src="_js/griddler.1.1.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+		$('#demo').Griddler();
+		
+		/*CODE FOR DEMO DISPLAY PURPOSES ONLY*/
+		var width = $(window).width();
+		$('#nav').css('width', (width-223));
+		/*END DEMO DISPLAY PURPOSES ONLY*/
+    });
+</script>
+</head>
+
+<body>
+	<div id="nav_wrapper">
+    	<div id="branding">
+        	<img src="_images/demo_assets/header_logo.png" alt="Griddler" />
+        </div>
+        <div id="nav">
+        	<div id="upper_nav">
+            	<img src="_images/demo_assets/header_title.png" alt="Griddler jQuery Plugin" />
+            </div>
+            <ul id="lower_nav">
+            	<li class="current"><a href="documentation.html">Documentation</a></li>
+            	<li><a href="quick_start.html">Quick Start</a></li>
+                <li><a href="demo_01.html">Demo 1</a></li>
+                <li><a href="demo_02.html">Demo 2</a></li>
+                <li><a href="demo_03.html">Demo 3</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+            <div id="lower_nav_border"></div>
+        </div>
+    </div>
+    <div id="intro_wrapper">
+    	<div id="intro_content">
+        	<h1 class="yellow_heading">Griddler jQuery Plugin Documentation v1.1.0</h1>
+        	<div class="white_bg">
+                <p><i>
+                    Plugin: Griddler jQuery Plugin<br />
+                    By: <a href="http://codecanyon.net/user/mkamla">mkamla</a><br />
+                    Created: October 13th, 2013<br />
+                    Version: 1.1.0
+                    </i>
+                </p>
+                <p>Thank you for purchasing the Griddler jQuery Plugin. If you have any questions that are beyond the scope of this help file, please feel free to send us an email using the contact form on our <a href="http://codecanyon.net/user/mkamla">Codecanyon profile page</a>. Thank you again for your purchase of the Griddler jQuery Plugin!</p>
+            </div>
+        	<h1 class="yellow_heading">Table of Contents</h1>
+        	<div class="white_bg">
+                
+                <ul id="table_of_contents">
+                    <li><a href="#files">Files</a></li>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#javascript">Javascript</a></li>
+                    <li><a href="#credits">Credits</a></li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+    <div class="white_border_top"></div>
+    <div id="information_wrapper">
+        <div id="files">
+            <h1>Files</h1>
+            <p>The files in the download are comprised of a 'readme.text' file, and two main folders: 'demo' and 'plugin_files'. The demo folder contains all of the documentation, demonstration and help files. The plugin_files folder contains <b>all</b> necessary files for the plugin to work on your installation.</p>
+            <p><img src="_images/demo_assets/file_folder_01.png" alt="Folder Structure" /></p>
+            
+            <h2 class="gray_header">Demo Folder</h2>
+            <p>The 'demo' folder (below) is <b>not</b> essential for your plugin to work. The files inside this folder are to be used for your reference. A description of each file contained in this folder is listed below.</p>
+            <p><img src="_images/demo_assets/file_folder_02.png" alt="Folder Structure" /></p>
+            <p>
+                <ol>
+                    <li><b>'_css' Folder:</b>
+                        <ol>
+                            <li> - griddler_style.css contains the style rules that affect the Griddler plugin in the demo pages.</li>
+                            <li> - main.css contains the style rules that affect the main page layout and styling in the documentation, demo pages and help page.</li>
+                        </ol>
+                    </li>
+                    <li><b>'_images' Folder:</b>
+                        <ol>
+                            <li> - demo_assets folder contains the images displayed in the documentation, demo pages and help page.</li>
+                            <li> - gallery folder contains the images used for the Griddler gallery in the demo example pages.</li>
+                            <li> - There are four remaining images inside this folder that are displayed in the lightbox and rollover/hover effects in the demo pages.</li>
+                        </ol>
+                    </li>
+                    <li><b>'_js' Folder:</b>
+                        <ol>
+                            <li> - griddler.1.1.0.js contains the complete and documented source code for the Griddler plugin.</li>
+                            <li> - griddler.1.1.0.min.js is the compressed/minified version of the Griddler plugin and should be used in your installation.</li>
+                            <li> - jquery.1.8.0.min.js contains the jQuery library version 1.8.0.</li>
+                        </ol>
+                    </li>
+                    <li><b> - demo_01.html</b> demonstrates how to enable lightbox functionality and customizing your plugin settings.</li>
+                    <li><b> - demo_02.html</b> demonstrates how to bypass the lightbox and further explains the plugin settings.</li>
+                    <li><b> - demo_03.html</b> demonstrates how to use the lightbox feature with videos and how to setup your HTML for a full screen width Griddler display.</li>
+                    <li><b> - quick_start.html</b> contains the quick start demo with only the mininum settings included.</li>
+                    <li><b> - documentation.html</b> contains this plugin's full documentation. This is the page you are currently viewing.</li>
+                    <li><b> - help.html</b> contains useful help topics and frequently asked questions about the plugin.</li>
+                </ol>
+            </p>
+            
+            <h2 class="gray_header">Plugin_files Folder</h2>
+            <p>The 'plugin_files' folder contain all the files necessary for the Griddler plugin. <b>These files are required for your installation of the plugin</b>. The files that make up the plugin are listed below.</p>
+            <p><img src="_images/demo_assets/file_folder_03.png" alt="Folder Structure" /></p>
+            <p>
+            	<ol>
+                	<li> - <b>griddler_style.css</b> contains the style rules that affect the Griddler plugin styling.</li>
+                    <li> - <b>griddler.1.1.0.js</b> contains the complete and documented source code for the Griddler plugin.</li>
+                    <li> - <b>griddler.1.1.0.min.js</b> is the compressed/minified version of the Griddler plugin and should be used in your installation.</li>
+                    <li> - <b>jquery.1.8.0.min.js</b> contains the jQuery library version 1.8.0.</li>
+                    <li> - <b>plugin_images folder</b> contains the images used specifically for the plugin (ex. lightbox overlay, hover overlay, etc.)</li>
+                    <li> - <b>gallery_assets folder</b> contains the images used to display in the gallery (large lightbox display images and grid thumbnails)</li>
+                </ol>
+            </p>
+            <span class="credit"><a href="#">Top of Page</a></span>
+        </div>
+    </div>
+  
+    <div class="white_border_btm"></div>
+    <div id="code_wrapper">
+    	<div id="code">
+        	<h1>Code</h1>
+            <h2 id="html" class="white_header">HTML</h2>
+            <div class="white_bg">
+            <h2 class="gray_header">Head</h2>
+            <p>Inside the <span class="element">&lt;head&gt;</span> of your HTML document, you will need to include the necessary CSS and Javascript files. Start by including the Griddler CSS file.</p>
+            <pre>
+<code style="color:#00F;">&lt;link rel="stylesheet" type="text/css" href=</span>"griddler_style.css" /&gt;</span></code>
+            </pre>
+            
+            <p>The plugin requires the jQuery javascript library. So,the the jQuery library is added in the <span class="element">&lt;head&gt;</span>. jQuery version 1.8.0 is recommended, but other versions of jQuery may be compatible. Use alternate versions at your own risk.</p>
+            <pre>
+<code style="color:#00F;"><span style="color:#900;">&lt;script type=</span>"text/javascript"<span style="color:#900;"> src=</span>"jquery.1.8.0.min.js"<span style="color:#900;">&gt;&lt;/script&gt;</span></code>
+            </pre>
+            
+            <p>On the next line, the minified Griddler plugin is included.</p>
+            <pre>
+<code style="color:#00F;"><span style="color:#900;">&lt;script type=</span>"text/javascript"<span style="color:#900;"> src=</span>"griddler.1.1.0.min.js"<span style="color:#900;">&gt;&lt;/script&gt;</span></code>
+            </pre>
+            <p>The code inside of the <span class="element">&lt;head&gt;</span> element should look similar to the example below.</p>
+            <pre>
+<code style="color:#00F;">
+&lt;head&gt;
+
+   &lt;link rel="stylesheet" type="text/css" href=</span>"griddler_style.css" /&gt;
+   <span style="color:#900;">&lt;script type=</span>"text/javascript"<span style="color:#900;"> src=</span>"jquery.1.8.0.min.js"<span style="color:#900;">&gt;&lt;/script&gt;</span>
+   <span style="color:#900;">&lt;script type=</span>"text/javascript"<span style="color:#900;"> src=</span>"griddler.1.1.0.min.js"<span style="color:#900;">&gt;&lt;/script&gt;</span>
+   
+&lt;/head&gt;
+</code>
+            </pre>
+            <h2 class="gray_header">Body</h2>
+            <p>The HTML <span class="element">&lt;body&gt;</span> structure requires an unordered list <span class="element">&lt;ul&gt;</span> with an ID attribute. In this example, our <span class="element">&lt;ul&gt;</span> ID is "demo", but you may assign whatever value you want to the ID attribute, provided the value is unique. <span class="element">&lt;ul&gt;</span> elements contain list items <span class="element">&lt;li&gt;</span>. Each <span class="element">&lt;li&gt;</span> will represent an individual grid item once the plugin has been initiated.</p>
+                <pre>
+        			<code>
+                    <span style="color:#00F;">             
+&lt;body&gt;     
+         
+    &lt;ul id="demo"&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;      
+    &lt;/ul&gt;
+    
+&lt;/body&gt;</span>    
+        			</code>
+                </pre>
+                <p>Then, inside each <span class="element">&lt;li&gt;</span> tag, you will need to include an anchor tag <span class="element">&lt;a&gt;</span>. In between the opening and closing of the <span class="element">&lt;a&gt;</span>, insert an image tag <span class="element">&lt;img /&gt;</span>.</p>
+                <p>Finally, after each <span class="element">&lt;a&gt;</span> closing, create a <span class="element">&lt;div&gt;</span> with a "project_info" class. Inside the <span class="element">&lt;div&gt;</span> tag, create a <span class="element">&lt;h2&gt;</span> element. You can put your items' information in plain text here. The code is shown below.</p>
+                <pre>
+        			<code><span style="color:#00F;">                   
+&lt;body&gt;     
+         
+    &lt;ul id="demo"&gt;
+        &lt;li&gt;
+          <span style="color:#060;">&lt;a href=</span>"http://codecanyon.net"<span style="color:#060;">&gt;</span>
+            <span style="color:#909;">&lt;img src=</span>"image1.jpg"<span style="color:#909;"> alt="" /&gt;</span>
+           <span style="color:#060;">&lt;/a&gt;</span>
+           &lt;div class="project_info"&gt;
+             &lt;h2&gt;<span style="color:#000;">This is a project description</span>&lt;/h2&gt;
+           &lt;/div&gt;
+        &lt;/li&gt;
+        
+        &lt;li&gt;
+          <span style="color:#060;">&lt;a href=</span>"http://codecanyon.net"<span style="color:#060;">&gt;</span>
+            <span style="color:#909;">&lt;img src=</span>"image1.jpg"<span style="color:#909;"> alt="" /&gt;</span>
+           <span style="color:#060;">&lt;/a&gt;</span>
+           &lt;div class="project_info"&gt;
+             &lt;h2&gt;<span style="color:#000;">This is a project description</span>&lt;/h2&gt;
+           &lt;/div&gt;
+        &lt;/li&gt;
+        
+        &lt;li&gt;
+          <span style="color:#060;">&lt;a href=</span>"http://codecanyon.net"<span style="color:#060;">&gt;</span>
+            <span style="color:#909;">&lt;img src=</span>"image1.jpg"<span style="color:#909;"> alt="" /&gt;</span>
+           <span style="color:#060;">&lt;/a&gt;</span>
+           &lt;div class="project_info"&gt;
+             &lt;h2&gt;<span style="color:#000;">This is a project description</span>&lt;/h2&gt;
+           &lt;/div&gt;
+        &lt;/li&gt;     
+    &lt;/ul&gt;
+    
+&lt;/body&gt;</span>
+        			</code>
+                </pre>
+                <p>The HTML code shown above is the absolute minimum markup you need to start your plugin. Make sure that all of your anchor tags and images are correctly linked to their respective targets.</p>
+                
+                <span class="credit"><a href="#">Top of Page</a></span>
+            </div>
+            
+            <h2 id="css" class="white_header">CSS</h2>
+            <div class="white_bg">
+            <p>The Griddler plugin uses one primary CSS file named 'griddler_style.css'. There are three sections within the CSS file. They are marked with opening and closing comments. An example is shown below.</p>
+            
+            <pre>
+        			<code>
+                    <span style="color:#999;">             
+/*-----START BASIC HTML STYLE RULES-----*/    
+         
+<span style="color:#F0F;">Sample CSS Rule Here {
+
+}</span>
+    
+/*-----END BASIC HTML STYLE RULES-----*/</span>
+    
+        			</code>
+                </pre>
+                <p>Each CSS section is listed below in order of appearance in the document along with the line number of the start of each section.
+                	<ol>
+                    	<li>Basic HTML Section - resets default browser rules (line 4)</li>
+                        <li>Grid Section - Style rules regarding the grid layout (line 23)</li>
+                        <li>Lightbox Section - Style rules for the lightbox feature (line 97)</li>
+                    </ol>
+                </p>
+                <p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited. Some common CSS styling rules that maybe of interest are listed below with a description with important lines highlighted in bold.</p>
+                
+                <p><b>Grid Description:</b> To change the style of the text of each grid's project information, start on line 48.</p>
+                <pre><code><span style="color:#F0F;">             
+#featured_project h2, #project_top h2, #project_btm h2 {<span style="color:#00F;">
+	<b>color:#FFF;
+	font-family:Helvetica, Arial, sans-serif;</b>
+	font-weight:normal;
+	<b>text-shadow:0px 1px 0px #303030;</b>
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	position:relative;
+	top:120%;</span>
+}</span></code></pre>
+                
+                <p><b>Grid Project Info Background:</b> To change the background image of each grid's project information, start on line 60. The default background image is a one square pixel .PNG file with roughly an 85% opacity. The background is repeated over the project info area. The default background is a dark overlay. To change it to a light-colored overlay, direct the 'background-image' value to "url(plugin_assets/light_bg.png)". This value may change if you have placed the plugin image files under a different folder.</p>
+                <pre><code><span style="color:#F0F;">             
+.project_info {<span style="color:#00F;">
+	cursor:pointer;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+	<b>background-image:url(plugin_assets/dark_bg.png);</b>
+	background-repeat:repeat;
+	display:none;</span>
+}</span></code></pre>
+
+				<p><b>Lightbox Background:</b> To change the background image of the lightbox background overlay, start on line 99. This process is very similar to the example above.</p>
+                <pre><code><span style="color:#F0F;">             
+#lightbox_wrapper {<span style="color:#00F;">
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	<b>background-image:url(plugin_assets/lightbox_overlay.png);</b>
+	background-repeat:repeat;
+	text-align:center;
+	z-index:10000;
+	display:none;</span>
+}</span></code></pre>
+
+				<p><b>Lightbox Close Button:</b> To change the lightbox's close button, start on line 126. You may change the buttons height and width as well as the background image, which displays the 'X' button in the demo. You may replace this image with one of your own or you may edit the existing image in a graphics program of your choice.</p>
+                <p>Please note this item uses CSS sprites. If you're unfamiliar with this concept, please visit this tutorial on <a href="http://net.tutsplus.com/articles/news/exactly-how-to-use-css-sprites/" target="_blank">Exactly How to Use CSS Sprites</a>.</p>
+                <pre><code><span style="color:#F0F;">             
+#close_lightbox {<span style="color:#00F;">
+	width:59px;
+	height:58px;
+	background-color:#000;
+	<b>background-image:url(plugin_assets/close_lightbox_btn.png);
+	background-position:0px 0px;</b>
+	border-top:solid 1px #404040;
+	border-right:solid 1px #404040;
+	border-bottom:solid 1px #404040;
+	overflow:hidden;
+	position:absolute;
+	top:0px;
+	right:-61px;</span>
+}
+
+#close_lightbox:hover {<span style="color:#00F;">
+	cursor:pointer;
+	<b>background-position:0px -58px;</b></span>
+}</span></code></pre>
+
+                <span class="credit"><a href="#">Top of Page</a></span>
+            </div>
+            
+            <h2 id="javascript" class="white_header">Javascript</h2>
+            <div class="white_bg">
+            <p>
+            This plugin utilizes two Javascript files. Each file is listed below with a brief description.<br />
+                <ol>
+                    <li><b>jquery.1.8.0.min.js</b> - Contains the jQuery library version 1.8.0. jQuery is a fast, small, and feature-rich JavaScript library that makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler. For more information, please visit <a href="http://jquery.com/" target="_blank">jQuery.com</a></li>
+                    <li><b>griddler.1.1.0.min.js</b> - Contains the compressed/minified version of the Griddler jQuery Plugin</li>
+                </ol>
+            </p>
+                
+                <h2 class="gray_header">Initiating the Plugin</h2>
+                <p>To initiate the plugin, include the following jQuery in the <span class="element">&lt;head&gt;</span>, just below the CSS and Javascript inclusions described earlier in the HTML section.</p>
+                
+                <pre><code style="color:#00F;">
+<span style="color:#900;">&lt;script type=</span>"text/javascript"<span style="color:#900;">&gt;</span>
+    <span style="color:#000;">$(</span><span style="color:#C0F;">document</span><span style="color:#000;">).ready(function(){
+        $(</span>'#demo'<span style="color:#000;">).Griddler();
+    });</span>
+<span style="color:#900;">&lt;/script&gt;</span>
+        		</code></pre>
+                
+                <p>The jQuery code above initiates the Griddler() method on <span class="element">&lt;ul id="demo"&gt;</span> as soon as the DOM is fully loaded. This code is required for your plugin to work.</p>
+                
+                
+                <h2 class="gray_header">Plugin Options</h2>
+                <p>Below you will find a list of every Griddler plugin option. These are settings that you can specify inside of your jQuery code. If no settings are explicitly defined, like the example above, then the default option value will be applied.</p>
+                
+                <ul id="options">
+                	<li id="key">
+                        <div class="option_name">Name</div>
+                        <div class="option_default">Default</div>
+                        <div class="option_value">Description</div>
+                    </li>
+                    <li>
+                        <div class="option_name">ratio</div>
+                        <div class="option_default">'16:9'</div>
+                        <div class="option_value">Width to height ratio of each grid. Datatype: string</div>
+                    </li>
+                    <li>
+                        <div class="option_name">margin</div>
+                        <div class="option_default">5</div>
+                        <div class="option_value">Margin between each grid in pixels. Datatype: number</div>
+                    </li>
+                    <li>
+                        <div class="option_name">columns</div>
+                        <div class="option_default">4</div>
+                        <div class="option_value">Number of columns in layout. Datatype: number</div>
+                    </li>
+                    <li>
+                        <div class="option_name">featureGrid</div>
+                        <div class="option_default">'inline'</div>
+                        <div class="option_value">Enable a large featured grid. Options: 'inline', 'top' or 'disable'. Datatype: string</div>
+                    </li>
+                    <li>
+                        <div class="option_name">rollover</div>
+                        <div class="option_default">true</div>
+                        <div class="option_value">Enable grid hover animation. Datatype: boolean</div>
+                    </li>
+                    <li>
+                        <div class="option_name">gridLimit</div>
+                        <div class="option_default">13</div>
+                        <div class="option_value">Limit the number of grids to display. Value of false removes limit. Datatype: number or boolean</div>
+                    </li>
+                    <li>
+                        <div class="option_name">expandLimit</div>
+                        <div class="option_default">true</div>
+                        <div class="option_value">Load more grids if a grid limit is in place. Datatype: boolean</div>
+                    </li>
+                </ul>
+                <p>Below is an example of calling the Griddler plugin with all available options shown. Each option value is assigned the default value described above. Note the curly brackets "{}", inside of the parenthesis. The brackets are required inside the Griddler function argument when you define a plugin option.</p>
+                <pre><code style="color:#00F;">
+<span style="color:#900;">&lt;script type=</span>"text/javascript"<span style="color:#900;">&gt;</span>
+    <span style="color:#000;">$(</span><span style="color:#C0F;">document</span><span style="color:#000;">).ready(function(){
+        $(</span>'#demo'<span style="color:#000;">).Griddler({ 
+		ratio: <span style="color:#00F;">'16:9'</span>,
+		columns: <span style="color:#F00;">4</span>,
+		featureGrid: <span style="color:#00F;">'inline'</span>,
+		rollover: <span style="color:#00F;">true</span>,
+		gridLimit: <span style="color:#F00;">13</span>,
+		expandLimit: <span style="color:#00F;">true</span>
+	});
+    });</span>
+<span style="color:#900;">&lt;/script&gt;</span>
+        		</code></pre>
+                
+                <p>Examples of customizing these options is shown in <a href="demo_01.html">Demo 1</a>, <a href="demo_02.html">Demo 2</a> and <a href="demo_03.html">Demo 3</a>.</p>
+                <p>For the simplest way to get your plugin installed, please view the <a href="quick_start.html">Quick Start page</a>.</p>
+                
+                <span class="credit"><a href="#">Top of Page</a></span>
+                  
+            </div>
+            <h2 id="credits" class="white_header">Credits</h2>
+            <div class="white_bg">
+                <p><a href="http://jquery.com" target="_blank">jQuery Javascript Library</a></p>
+                <p>Thank you for purchasing the Griddler jQuery Plugin. If you need help, please <a href="http://codecanyon.net/user/mkamla">Contact Us</a>.</p>
+            </div>  
+        </div>
+    </div>
+    <div class="white_border_top"></div>
+    <div id="footer_wrapper">
+    	<div id="footer">
+        <span class="credit"><a href="http://codecanyon.net/user/mkamla">Contact for Support</a></span>
+        	<h3>Copyright &copy;2013 Mkamla.com. All rights reserved.</h3>
+        </div>
+    </div>
+</body>
+</html>

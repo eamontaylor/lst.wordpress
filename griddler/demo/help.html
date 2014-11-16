@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Griddler jQuery Plugin: Help</title>
+<link rel="icon" href="_images/icon.png" />
+<link type="text/css" rel="stylesheet" href="_css/main.css" />
+<link rel="stylesheet" href="_css/griddler_style.css" type="text/css" />
+<script type="text/javascript" src="_js/jquery.1.7.2.min.js"></script>
+<script type="text/javascript" src="_js/griddler.1.0.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+		$('#demo').Griddler();
+		
+		/*CODE FOR DEMO DISPLAY PURPOSES ONLY*/
+		var width = $(window).width();
+		$('#nav').css('width', (width-223));
+		/*END DEMO DISPLAY PURPOSES ONLY*/
+    });
+</script>
+</head>
+
+<body>
+	<div id="nav_wrapper">
+    	<div id="branding">
+        	<img src="_images/demo_assets/header_logo.png" alt="Griddler" />
+        </div>
+        <div id="nav">
+        	<div id="upper_nav">
+            	<img src="_images/demo_assets/header_title.png" alt="Griddler jQuery Plugin" />
+            </div>
+            <ul id="lower_nav">
+            	<li><a href="index.html">Documentation</a></li>
+            	<li><a href="quick_start.html">Quick Start</a></li>
+                <li><a href="demo_01.html">Demo 1</a></li>
+                <li><a href="demo_02.html">Demo 2</a></li>
+                <li><a href="demo_03.html">Demo 3</a></li>
+                <li class="current"><a href="help.html">Help</a></li>
+            </ul>
+            <div id="lower_nav_border"></div>
+        </div>
+    </div>
+    <div id="intro_wrapper">
+    	<div id="intro_content">
+        	<h1 class="yellow_heading">Help/FAQ</h1>
+        	<div class="white_bg">
+                
+                <p>This page is here to help you troubleshoot any problems you may encounter after purchasing the Griddler jQuery Plugin. Make sure that you have carefully read the <a href="documentation.html">Documentation section</a>. If you're still having issues after reading this help file and the documentation, please feel free to send us an email using the contact form on our <a href="http://codecanyon.net/user/mkamla">Codecanyon profile page</a>, or leave a comment in this item's discussion section.</p>
+            </div>
+        	<h1 class="yellow_heading">Quick Links</h1>
+        	<div class="white_bg">
+                <!--<p>Below is an outline of everything you need to get started using the Griddler plugin. If you recently purchased this item, please read the information below to ensure a quick and easy installation.</p>-->
+                
+                <ul id="table_of_contents">
+                    <li><a href="#q1">Griddler is not rendering</a></li>
+                    <li><a href="#q2">The lightbox isn't working</a></li>
+                    <li><a href="#q3">My video isn't showing in the lightbox</a></li>
+                    <li><a href="#q4">The hover/rollover animation isn't working</a></li>
+                    <li><a href="#q5">Some of my grids are missing</a></li>
+                    <li><a href="#q6">My Griddler content isn't the right size</a></li>
+                    <li><a href="#q7">My grids are not the right size</a></li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+    <div class="white_border_top"></div>
+    <div id="help_wrapper">
+    	<div id="help">
+            <div id="q1" class="issue">
+            	<h3>Griddler is not rendering</h3>
+            </div>
+            <div class="answer">
+            	<p>If your Griddler plugin is not rendering inside of the browser, check the following:</p>
+                <ol>
+                	<li>Is the jQuery library included in the page and positioned BEFORE the Griddler plugin?</li>
+                    <li>Is the Griddler plugin file included in the page?</li>
+                    <li>Is the &lt;ul&gt; tag with the correct ID included in the page between the "body" tags?</li>
+                    <li>Make sure all of CSS and Javascript files in the &lt;head&gt; have the correct link in their src or href attributes.</li>
+                </ol>
+            </div>
+            
+            <div id="q2" class="issue">
+            	<h3>The lightbox isn't working</h3>
+            </div>
+            <div class="answer">
+            	<p>If your Griddler lightbox isn't showing, check the following:</p>
+                <ol>
+                	<li>Does the particular list item's &lt;a&gt; tag have a class of "lightbox"?</li>
+                    <li>Does the list item's &lt;a&gt; tag have the correct href value?</li>
+                    <li>If the screen overlay isn't visible, go to line 101 of your 'griddler_style.css' document. Make sure the URL path is correct.</li>
+                    <li>In some cases, Internet Explorer 7 and 8 may experience unreliable execution of jQuery's .load() event handler function, causing the lightbox to stall or the image will fail to appear in the lightbox area. This issue has been documented in jQuery's library. <a href="http://api.jquery.com/load-event/" target="_blank">More information can be found here</a>.</li>
+                </ol>
+            </div>
+            
+            <div  id="q3"class="issue">
+            	<h3>My video isn't showing in the lightbox</h3>
+            </div>
+            <div class="answer">
+            	<p>If your video isn't display in the lightbox, check the following:</p>
+                <ol>
+                	<li>Make sure that the desired list item's &lt;a&gt; tag has a class of "iframe".</li>
+                    <li>Make sure the &lt;a&gt; tag has the correct URL in the href attribute</li>
+                    <li>Version 1.0 only supports Vimeo and Youtube embeds at this time.</li>
+                    <li>Make sure your &lt;a&gt; tag has the correct markup as described in <a href="demo_03.html">Demo 3</a>.</li>
+                    <li>Some video embeds may take a moment to display, please be patient.</li>
+                </ol>
+            </div>
+            
+            <div id="q4" class="issue">
+            	<h3>The hover/rollover animation isn't working</h3>
+            </div>
+            <div class="answer">
+            	<p>If your Griddler rollover animation is not showing when you hover over a grid, check the following:</p>
+                <ol>
+                	<li>Make sure that <span class="element">&lt;div class="project_info"&gt;</span> is included inside the list item and the <span class="element">&lt;h2&gt;</span> has text inside of it.</li>
+                	<li>Check your jQuery to make sure that the plugin's "rollover" value is set to true.</li>
+                    <li>If the text is visible but the overlay isn't, go to line 67 of your 'griddler_style.css' document. Make sure the URL path is correct.</li>
+                </ol>
+            </div>
+            
+            <div id="q5"class="issue">
+            	<h3>Some of my grids are missing</h3>
+            </div>
+            <div class="answer">
+            	<p>If some of your grids are not showing in the browser, check the following:</p>
+                <ol>
+                	<li>In your jQuery, check the plugin's "gridLimit" and "expandGrid" values.</li>
+                	<li>If "gridLimit" is not false, or a numeric value of 0, then make sure that "expandGrid" is set to true</li>
+                    <li>If "gridLimit" is false or 0, give it a numeric value greater than 0. Set "expandGrid" to true to ensure more grids can be shown if your grid quantity exceeds the "gridLimit" value. This is explained in <a href="demo_01.html">Demo 1</a>.</li>
+                </ol>
+            </div>
+            
+            <div  id="q6"class="issue">
+            	<h3>My Griddler content isn't the right size</h3>
+            </div>
+            <div class="answer">
+            	<p>If Griddler content is too small/big:</p>
+                <ol>
+                	<li>The Griddler content automatically fills the full <b>width</b> of it's parent element.</li>
+                	<li>The Griddler does not have a set height, but it can be controlled by setting a "gridLimit" value in your jQuery plugin.</li>
+                </ol>
+            </div>
+            
+            <div id="q7" class="issue">
+            	<h3>My grids are not the right size</h3>
+            </div>
+            <div class="answer">
+            	<p>If your individual grids aren't the correct size, check the following:</p>
+                <ol>
+                	<li>Make sure that the "ratio" setting in your jQuery is a string datatype (surrounded by quotation marks).</li>
+                	<li>The "ratio" setting must have two numbers, separated by a colon (":"). Example: '12:5'</li>
+                </ol>
+            </div>
+            
+        </div>
+    </div>
+    <div class="white_border_top"></div>
+    <div id="footer_wrapper">
+    	<div id="footer">
+        <span class="credit"><a href="http://codecanyon.net/user/mkamla">Contact for Support</a></span>
+        	<h3>Copyright &copy;2013 Mkamla.com. All rights reserved.</h3>
+        </div>
+    </div>
+</body>
+</html>

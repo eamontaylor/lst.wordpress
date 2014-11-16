@@ -1,0 +1,189 @@
+/* Global config */
+@import "config/variables"; // Your custom variables
+@import "config/colors"; // Your custom color scheme
+@import "config/settings"; // Default settings file. Uncomment each setting you need to change
+
+/* Foundation 5 */
+@import "foundation"; // Foundation 5 by Zurb
+
+/* Behold, here are all the Foundation components. Comment out "foundation" above if you would select the parts
+of Foundation used instead.
+This can decrease the css file size drastically, and should be done before production*/
+//  @import "foundation/components/grid";
+//  @import "foundation/components/accordion";
+//  @import "foundation/components/alert-boxes";
+//  @import "foundation/components/block-grid";
+//  @import "foundation/components/breadcrumbs";
+//  @import "foundation/components/button-groups";
+//  @import "foundation/components/buttons";
+//  @import "foundation/components/clearing";
+//  @import "foundation/components/dropdown";
+//  @import "foundation/components/dropdown-buttons";
+//  @import "foundation/components/flex-video";
+//  @import "foundation/components/forms";
+//  @import "foundation/components/icon-bar";
+//  @import "foundation/components/inline-lists";
+//  @import "foundation/components/joyride";
+//  @import "foundation/components/keystrokes";
+//  @import "foundation/components/labels";
+//  @import "foundation/components/magellan";
+//  @import "foundation/components/orbit";
+//  @import "foundation/components/pagination";
+//  @import "foundation/components/panels";
+//  @import "foundation/components/pricing-tables";
+//  @import "foundation/components/progress-bars";
+//  @import "foundation/components/range-slider";
+//  @import "foundation/components/reveal";
+//  @import "foundation/components/side-nav";
+//  @import "foundation/components/split-buttons";
+//  @import "foundation/components/sub-nav";
+//  @import "foundation/components/switches";
+//  @import "foundation/components/tables";
+//  @import "foundation/components/tabs";
+//  @import "foundation/components/thumbs";
+//  @import "foundation/components/tooltips";
+//  @import "foundation/components/top-bar";
+//  @import "foundation/components/type";
+//  @import "foundation/components/offcanvas";
+//  @import "foundation/components/visibility";
+
+/* Site structure */
+@import "site/structure"; // Your site structure
+
+/* Assets */
+@import "assets/icons"; // Load Foundation icon fonts
+
+
+/*
+
+header h1{
+	position:absolute;
+	top:50px;
+}
+
+header h2{
+	position:absolute;
+	top:50px;
+}*/
+
+.contain-to-grid{
+	background:none;
+}
+.top-bar{
+	background: rgba(0, 0, 0, 0.1);	
+}
+
+.top-bar-section ul li{
+	background:none;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button){
+	background:none;
+	
+}
+
+header{
+	width: 100%;
+	display:table;
+	background:url('http://lst.wordpress/wp-content/uploads/2014/10/lst-web_01.jpg') no-repeat center center;
+	background-size:cover;
+	height:auto;
+}
+
+.we-do-container{
+	background:url('http://lst.wordpress/wp-content/uploads/2014/10/lst-web_02.jpg') no-repeat center center;
+	background-size:cover;
+	height:auto;
+}
+
+.work-container{
+	background:url('http://lst.wordpress/wp-content/uploads/2014/10/lst-web_03.jpg') no-repeat center center;
+	background-size:cover;
+	height:auto;
+}
+
+.who-we-are-container{
+	background:url('http://lst.wordpress/wp-content/uploads/2014/10/lst-web_04.jpg') no-repeat center center;
+	background-size:cover;
+	height:auto;
+}
+
+.lets-make-it-work-container{
+
+}
+
+.text-overlay-header .title-container{
+	margin-top:-80px;
+/*
+	display:table-row;
+*/
+	padding:0 0 80px;
+}
+.description-border{
+	border-left:3px solid #ffffff;
+	display:block;
+	width:170px;
+	margin:0 auto;
+	text-align:left;
+	padding:0 0 0 10px;
+}
+
+h1{
+	font-size:$h1-font-reduction;
+}
+
+h2{
+	font-size:$h2-font-reduction;
+
+}
+
+.text-overlay-header h1, .text-overlay-header h2{
+	color:$white;
+/*
+	text-align:center;
+	vertical-align:middle;
+	display:table-cell;*/
+
+}
+
+.text-overlay-header h1{
+	letter-spacing: 25px;
+}
+
+
+.text-overlay{
+/*
+	top:0;
+	left:0;*/
+
+/*
+	position:absolute;
+*/
+	color:$jet;
+/*
+	background: rgba(207, 207, 207, 0.7);
+*/
+	text-align:center;
+	padding-top:60px;
+}	
+
+
+.text-overlay-header{
+	text-align:center;
+	vertical-align:middle;
+	display:table-cell;
+}
+
+
+.row-full-width{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	position:relative;
+	
+}
+
+
+
